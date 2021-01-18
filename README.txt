@@ -1,14 +1,3 @@
-Background:
-I am a high school freshman studying computer science, machine learning, and computer vision. I found this topic intriguing because a doctor's time is extremely 
-valuable because that is time they could be using to save lives. There are also many places around the world that lack enough skilled doctors, and so increasing 
-the efficiency of the medical process can help the doctors these places deal with more pacients. This project segments brain tumors in MRI scans of brains, and so 
-could be used by doctors to more quickly analyze an MRI scan. An A.I. can also process data from all over the world extremely quickly and at consistent level of 
-accuracy, whereas a doctor is restricted to being in one place, may take a long time to analyze thousands of MRI scans, and may lack consistency of accuracy due to 
-things such as getting tired. This projects uses the 2D U-Net architecture to segment the MRI scan, which is a popular segmentation architecture for medical 
-applications. A U-Net consists of a contraction path and an expanding path. The contraction path has a series of convolutional layers and max-pooling layers, and 
-expanding path has a series of up-convolutional layers, concatination, and convolutional layers. U-Nets can have different depths. My code makes a model with a 
-depth of 2 (model0), a model with a depth of 3 (model1), a model with a depth of 4 (model2), and a model with a depth of 5 (model3). 
-
 Information on Project:
 This project is a brain tumor segmentor that uses a 2D U-Net to segment a brain tumor in an MRI scan of a brain. The dataset used for this is from the Decathlon 10 
 Challenge. The dataset can be found at this link: https://decathlon-10.grand-challenge.org/. The dataset includes 484 244x244x155x4 MRI scans in its training set. 
@@ -30,6 +19,17 @@ on the validation set per epoch. The models are then evaluated on validation set
 and are stored in pandas DataFrames and displayed using the display function from IPython.display. The ROC curves are the plotted. The final section, "Segment MRI 
 Scan", then randomly chooses an image from the validation set and displays the models prediction along with the actual value. The model currently used for 
 predictions is model2 (models[2]), and can be changed by changing the index (for example, to use the prediction of model1 change models[2] to models[1]).
+
+Background:
+I am a high school freshman studying computer science, machine learning, and computer vision. I found this topic intriguing because a doctor's time is extremely 
+valuable because that is time they could be using to save lives. There are also many places around the world that lack enough skilled doctors, and so increasing 
+the efficiency of the medical process can help the doctors these places deal with more pacients. This project segments brain tumors in MRI scans of brains, and so 
+could be used by doctors to more quickly analyze an MRI scan. An A.I. can also process data from all over the world extremely quickly and at consistent level of 
+accuracy, whereas a doctor is restricted to being in one place, may take a long time to analyze thousands of MRI scans, and may lack consistency of accuracy due to 
+things such as getting tired. This projects uses the 2D U-Net architecture to segment the MRI scan, which is a popular segmentation architecture for medical 
+applications. A U-Net consists of a contraction path and an expanding path. The contraction path has a series of convolutional layers and max-pooling layers, and 
+expanding path has a series of up-convolutional layers, concatination, and convolutional layers. U-Nets can have different depths. My code makes a model with a 
+depth of 2 (model0), a model with a depth of 3 (model1), a model with a depth of 4 (model2), and a model with a depth of 5 (model3). 
 
 Possible Ways This Project Could Be Improved:
 - Using a pre-trained model
