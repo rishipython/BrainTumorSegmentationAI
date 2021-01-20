@@ -4,7 +4,7 @@ This project is a brain tumor segmentor that uses a 2D U-Net to segment a brain 
 The dataset used for this is from the Decathlon 10 Challenge. The dataset can be found at this link: https://decathlon-10.grand-challenge.org/. The dataset includes 484 244x244x155x4 MRI scans in its training set. 
 Since only the training set includes labeled values, the dataset used in this project is from the training set in the imageTr folder of the Task01_BrainTumour.tar 
 file. The labeled value are in the labelsTr folder, and are of dimensions 244x244x155x1. The values in the labels are either 0, 1, 2, or 3, with 0 meaning 
-background, 1 meaning edema, 2 meaning non-enhancing tumor, and 3 meaning echancing tumour. 
+background, 1 meaning edema, 2 meaning non-enhancing tumor, and 3 meaning echancing tumour. During the extraction of the labels, they are one-hot-encoded into 244x244x155x4 numpy arrays. The "background" class is then removed (it is redundent, as if every other class is 0 then we know that it is background), which changes the number of classes from 4 to 3.
 
 1. In the "Data Preproccessing" section, the code loads the dataset using nibabel.load() (in my code, nib is used as the name for nibabel). 
 2. The data that is then loaded into the "images" and "labels" array are 2D slices of the 3D MRI scans where no more than 92.5% of the data is labeled as background. 
