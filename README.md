@@ -22,6 +22,7 @@ on the validation set per epoch. The models are then evaluated on validation set
 and are stored in pandas DataFrames and displayed using the display function from IPython.display. The ROC curves are the plotted. The final section, "Segment MRI 
 Scan", then randomly chooses an image from the validation set and displays the models prediction along with the actual value. The model currently used for 
 predictions is model2 (models[2]), and can be changed by changing the index (for example, to use the prediction of model1 change models[2] to models[1]).
+5. The best model is then determined based on performance on the validation set (I determined the best one to be model2) and is then evaluated on the test set.
 
 Background:
 I am a high school freshman studying computer science, machine learning, and computer vision. I found this topic intriguing because a doctor's time is extremely 
