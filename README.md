@@ -24,6 +24,8 @@ Scan", then randomly chooses an image from the validation set and displays the m
 predictions is model2 (models[2]), and can be changed by changing the index (for example, to use the prediction of model1 change models[2] to models[1]).
 5. The best model is then determined based on performance on the validation set (I determined the best one to be model2) and is then evaluated on the test set.
 
+The evaluations for each model can be found in the Google Colab Notebook for the project.
+
 Background:
 I am a high school freshman studying computer science, machine learning, and computer vision. I found this topic intriguing because a doctor's time is extremely 
 valuable because that is time they could be using to save lives. There are also many places around the world that lack enough skilled doctors, and so increasing 
