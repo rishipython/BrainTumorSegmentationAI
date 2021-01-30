@@ -1,0 +1,9 @@
+These are the Google Drive links for the preprocessed data:
+mean.npy (has the means used for normalization): https://drive.google.com/file/d/1nGMyOZ6i79aQtppM3vF7F7sfJdRChZRk/view?usp=sharing
+std.npy (has the standard deviations used for normalization): https://drive.google.com/file/d/1nEjc_Ml7ao2yyRzBGycPvV1TYmhIuuEF/view?usp=sharing
+train_images.npy (images for the training set): https://drive.google.com/file/d/1mUGROzuuhNjP2XisJNjbBBe9kbrkne76/view?usp=sharing
+train_labels.npy (labels for the training set): https://drive.google.com/file/d/1mdxHyaNbl7VaoPbezwp6yCo4RsvKNSFm/view?usp=sharing
+val_images.npy (images for the cross validation set): https://drive.google.com/file/d/1mhPWUqeHY-cs6OmoW42MTRaEvn4FCOOY/view?usp=sharing
+val_labels.npy (labels for the cross validation set): https://drive.google.com/file/d/1mz5khe-PdRJQ9swVUBFUdmEJNBNWQGSE/view?usp=sharing
+test_images.npy (images for the test set): https://drive.google.com/file/d/1n-bZBjflHjkHtAiIR3VoNlyEcApsmbde/view?usp=sharing
+test_labels.npy (labels for the test set): https://drive.google.com/file/d/1n08a3wj-YxMQ0aKBjm6edz_5h0EtOTdk/view?usp=sharing
